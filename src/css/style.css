@@ -1,0 +1,431 @@
+*{
+	box-sizing: border-box;
+}
+
+
+html,body{
+	margin:0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 100%;
+
+}
+
+
+/* MENU */
+
+#headerMenu{
+
+	width: 100%;
+	height: 60px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	z-index:999;
+	background-color: rgba(0,0,0,0.5);
+
+	display: flex;
+}
+
+.menu{
+	margin: auto;
+}
+
+#headerMenu ul{
+	list-style: none;
+	text-align: center;
+}
+
+.nav li{
+	display: inline-block;
+	margin: 0px 10px;
+	padding: 0px 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.nav a{
+	text-decoration: none;
+	color: rgba(255,255,255, 0.6);
+
+	border-bottom: 1px solid #fff;
+	border-color: rgba(255,255,255,0);
+
+	transition: 0.7s linear;
+	-webkit-transition: 0.7s linear;
+	-moz-transition: 0.7s linear;
+	-o-transition: 0.7s linear;
+}
+
+.nav a:hover{
+	border-bottom: 1px solid #fff;
+}
+
+/* FIN MENU*/
+
+/* DEBUT SECTION PERSO */
+
+#boiteAccueil{
+	width: 100%;
+	height: 100vh;
+	background: url("../img/home-bg-img.jpg") top center no-repeat fixed;
+	background-size: cover;
+	position : relative;
+
+
+}
+
+.surFond{
+	width: 100%;
+	height: 100vh;
+	background-color:rgba(0,0,0,0.8);
+}
+
+.infoAccueil{
+	margin: auto;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+h1{
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.infoAccueil h2{
+	color: #fff;
+	opacity: 0.5;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.infosPerso img{
+	border-radius: 100%;
+}
+
+.social{
+	position: absolute;
+	left:0px;
+	bottom: 10%;
+	width: 100%;
+	
+
+}
+
+.social ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social ul li{
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+/*.social ul li:last-child{
+	padding: 0px;
+}*/
+
+.social i{
+	line-height: 30px;
+	color: rgba(255,255,255,0.4);
+	width: 100%;
+}
+
+.social a{
+	width: 30px;
+	height: 30px;
+
+	display: block;
+
+	border-bottom: 1px solid;
+	border-color: rgba(255,255,255,0.4);
+
+}
+
+.social i:hover{
+	color:#fff;	
+}
+
+.social a:hover{
+
+	border-color: #fff;
+}
+
+/* FIN SECTION PERSO */
+
+/* SECTION DIPLOME */
+
+.diplomes{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.listeDiplomes{
+	width: 50%;
+	padding: 50px;
+}
+
+.listeDiplomes h2{
+	font-size: 1.4rem;
+	border-bottom: 1px solid black;
+}
+
+.listeDiplomes ul{
+	list-style: none;
+	padding: 0;
+}
+
+.listeDiplomes li{
+	margin-bottom: 2rem;
+}
+
+.listeDiplomes h3{
+
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	margin-bottom: 0.5rem;
+	font-family: "Open Sans", sans-serif;
+}
+
+.dateParcours h3, .dateParcours p{
+	display: inline-block;
+}
+
+.dateParcours p{
+	color: #b4b4b4;
+	font-style: italic;
+	font-size: 0.8rem;
+}
+
+.dateParcours{
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.detailParcours p{
+	font-size: 0.8rem;
+	text-align: justify;
+}
+
+/*Skill*/
+
+.listeSkill{
+	width: 50%;
+
+	background: url("../img/skills-bg-img.jpg") center no-repeat;
+	background-size: cover;
+	
+	display: flex;
+}
+
+.surFond2{
+	width: 100%;
+
+	background-color: rgba(0,0,0,0.4);
+
+	flex:1;
+}
+
+.skillBox{
+	margin: auto;
+	width: 33.33%;
+	height: 10rem;
+	padding: 20px;
+	color:#fff;
+	text-align: center;
+
+}
+
+.lateralesBordures{
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+}
+
+/*FIN SECTION DIPLOME*/
+.flexRowCenter{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.flexColumnCenter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.listeDiplomes h2{
+	text-transform: uppercase;
+}
+
+.listeExp{
+	width: 50%;
+	background:url("../img/bg-img.jpg") center no-repeat;
+	background-size: cover;
+
+	display: flex;
+}
+
+.surFondBlanc{
+	width: 100%;
+	background-color: rgba(255,255,255,0.8);
+
+	flex:1;
+
+
+
+
+}
+
+.hireMe{
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.3rem;
+
+}
+
+.hireMe a{
+	display: block;
+	background-color: #141414;
+	padding: 15px 30px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+
+}
+
+.hireMe a:hover{
+	background-color: orange;
+}
+
+.gMaps{
+	width: 50%;
+	display: flex;
+}
+
+.maFrame{
+	flex:1;
+}
+
+.infosPerso i{
+	float:left;
+	width: 36px;
+	margin-right: 10px;
+	border: 1px solid #dcdcdc;
+	border-radius: 100%;
+	color:#141414;
+	font-size: 13px;
+	text-align:center;
+	
+}
+
+.infosPerso i, .infosPerso li{
+	height: 36px;
+	line-height: 36px;
+}
+
+.infosPersos li p{
+	font-size: 1rem;
+}
+
+
+form{
+	width: 100%;
+
+}
+
+.input-style{
+	display: block;
+	background-color: #f0f0f0;
+	padding: 15px;
+	width: 100%;
+	border:none;
+	margin-bottom: 10px;
+}
+
+.textarea-style{
+	display: block;
+	background-color: #f0f0f0;
+	padding: 15px;
+	width: 100%;
+	border:none;
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+.submit-style{
+	display: block;
+	background-color:#141414;
+	padding: 15px 30px;
+	border: none;
+	color:#fff;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: auto;
+}
+
+
+
+/*FLIP*/
+
+
+.infosPerso{
+	position: relative;
+}
+
+
+.avatar, .numPerso{
+	backface-visibility: hidden;
+	transition: 2s ease; 
+}
+
+.numPerso{
+	position: absolute;
+	top: 0;
+
+	width: 100%;
+	height: 240px;
+
+	line-height: 240px;
+
+	color: #fff;
+	transform: rotateY(180deg);
+}
+
+.numPerso p{
+
+	padding: 0;
+
+	width: 240px;
+	height: 240px;
+
+	margin: auto;
+	background-color: green;
+	border-radius: 100%;
+
+}
+
+.avatar:hover{
+	transform: rotateY(180deg);
+}
+
+.avatar:hover + .numPerso{
+	transform: rotateY(360deg);
+}
